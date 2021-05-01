@@ -1,0 +1,105 @@
+/* ----- TRAYECTORIA ----- */
+/* BOXES */
+.box-t {
+    border: 4px solid darkcyan;
+    box-sizing: border-box;
+    width: 550px;
+    height: 390px;
+    margin: 20px 0;
+    border-radius: 15px;
+    transition: border 0.7s;
+    
+    &:hover {
+        border: 4px solid cyan; } }
+/* H2 */
+.box-t h2 {
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 0px;
+    margin: 30px 20px; }
+    .box-t-right h2 {
+        text-align: right; }
+/* IMAGENES */
+.img-t {
+    width: 500px;
+    height: 300px;
+    margin: 0 20px;
+    background-size: cover;
+    border-radius: 15px; }
+/* FONDO */
+.info-t {
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(31, 31, 31);
+    opacity: 0;
+    transition: all 0.7s;
+    &:hover {
+        opacity: 0.9;
+        border-radius: 15px; } }
+/* TEXTO */
+.text-t {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-size: 1.5rem;
+    p {
+        padding: 0 20px;
+        line-height: 1.5rem; } }
+
+/* LINKS IMAGENES */
+/* BOXES */
+    /* BOX 1 (1995) */
+    #img1 {
+        background-image: url("https://elintra.com.ar/wp-content/uploads/2020/11/Lewis-Hamilton-2-3.jpg"); }
+    /* BOX 2 (1999-2000) */
+    #img2 {
+        background-image: url("https://www.livesportcentre.com/wp-content/uploads/2020/11/embedded256257372-1536x1053.jpg"); }
+    /* BOX 3 (2001-2003) */
+    #img3 {
+        background-image: url("https://ep00.epimg.net/elpais/imagenes/2015/05/06/album/1430930105_297570_1431115921_album_normal.jpg"); }
+    /* BOX 4 (2004-2005) */
+    #img4 {
+        background-image: url("https://prints.motorsportimages.com/p/745/5th-f3-korea-super-prix-lewis-hamilton-manor-3329173.jpg"); }
+    /* BOX 5 (2006) */
+    #img5 {
+        background-image: url("https://i.redd.it/ain6dnxc4xf21.jpg"); }
+    /* BOX 6 (2007) */
+    #img6 {
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Lewis_Hamilton_2007_Canada.jpg/1280px-Lewis_Hamilton_2007_Canada.jpg"); }
+    /* BOX 7 (2008) */
+    #img7 {
+        background-image: url("https://www.momentogp.com/wp-content/uploads/2019/03/ham20082.jpg"); }
+    /* BOX 8 (2009-2012) */
+    #img8 {
+        background-image: url("https://cdn-1.motorsport.com/images/amp/G0ovex16/s6/f1-malaysian-gp-2012-michael-s.jpg"); }
+    /* BOX 9 (2013) */
+    #img9 {
+        background-image: url("https://www.f1-fansite.com/wp-content/uploads/2013/03/539253556-05551632013-Large.jpg"); }
+    /* BOX 10 (2014) */
+    #img10 {
+        background-image: url("http://www.diariodigitalcolombiano.com/wp-content/uploads/2015/07/Hamilton-800x445.png"); }
+    /* BOX 11 (2015) */
+    #img11 {
+        background-image: url("https://elcuentakilometro.files.wordpress.com/2016/01/hamilton-2015-e1451826651478.jpg"); }
+    /* BOX 12 (2016) */
+    #img12 {
+        background-image: url("https://e2.365dm.com/16/10/768x432/f1-conclusions-2014-f1-season_3800531.jpg"); }
+    /* BOX 13 (2017) */
+    #img13 {
+        background-image: url("https://static.dw.com/image/41163632_303.jpg"); }
+    /* BOX 14 (2018) */
+    #img14 {
+        background-image: url("https://poleman.com.ar/wp-content/uploads/2020/04/hamilton-msj-redes.jpg"); }
+    /* BOX 15 (2019) */
+    #img15 {
+        background-image: url("https://www.monsterenergy.com/media/uploads_image/2019/08/05/1600/800/8c6b9fd75efa9c475eb7443e2ef2ca38.jpg"); }
+    /* BOX 16 (2020) */
+    #img16 {
+        background-image: url("https://as.com/motor/imagenes/2020/11/15/formula_1/1605470980_963667_1605471055_noticia_normal_recorte1.jpg"); }
+    /* BOX 17 (2021) */
+    #img17 {
+        background-image: url("https://soymotor.com/sites/default/files/imagenes/noticia/hamilton-victoria-barein-f1-2021-soymotor.jpg"); }

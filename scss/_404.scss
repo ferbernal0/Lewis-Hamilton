@@ -1,0 +1,29 @@
+/* ----- 404 ----- */
+.body-404 {
+    background-color: black;
+    /* TEXTO */
+    h2 {
+        margin-top: 1rem;
+        text-align: center;
+        font-size: 3rem;
+        color: darkcyan;
+        background-color: #111; }
+    h1 {
+        text-align: center;
+        font-size: 10rem;
+        color: black;
+        -webkit-text-stroke: 1px cyan; }
+    h3 {
+        margin-top: 2rem;
+        text-align: center;
+        a {
+            color: black;
+            background-color: darkcyan;
+            border-radius: 5px;
+            text-decoration: none;
+            font-family: "Inconsolata", monospace;
+            transition: 0.5s;
+            &:hover {
+                background-color: cyan;
+                color: black;
+                text-decoration: none; } } } }

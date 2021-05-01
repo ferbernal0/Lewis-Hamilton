@@ -1,0 +1,60 @@
+/* ----- CONTACTO ----- */
+/* PANEL */
+.panel-co {
+    position: relative;
+    padding: 10px 0;
+    h2 {
+        font-size: 2rem;
+        line-height: 50px;
+        margin-left: 20px; }
+    fieldset {
+        height: 405px;
+        width: 400px;
+        margin-left: 20px;
+        border: 2px darkcyan solid; 
+        border-radius: 5px; }
+    legend {
+        font-size: 1.5rem;
+        margin-left: 20px; }
+    input {
+        background-color: transparent;
+        font-size: 1.1rem;
+        color: white;
+        border: 3px;
+        width: 350px;
+        height: 50px;
+        margin-left: 10px; }
+    label {
+        font-size: 1.25rem;
+        margin-left: 10px; }
+    textarea {
+        background-color: transparent;
+        border-color: darkcyan;
+        color: white;
+        border-radius: 5px;
+        margin-left: 10px; }
+    .enviar {
+        background-color: darkcyan;
+        border-radius: 5px;
+        color: black;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+        width: 85px;
+        height: 35px;
+        margin-left: 10px;
+        transition: all 0.4s;
+        &:hover {
+            background-color: black;
+            color: darkcyan; } } }
+/* IMAGEN */
+.img-co img {
+    position: relative;
+    width: 498.44px;
+    height: 430px; }
+
+/* MEDIA QUERY */
+/* MEDIUM */
+@media (max-width: 991px) {
+    .panel-co {
+        z-index: -1; } }

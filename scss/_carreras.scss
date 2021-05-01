@@ -1,0 +1,73 @@
+/* ----- CARRERAS ----- */
+/* TITULO */
+.title-ca h2 {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 1.8rem; }
+/* TABLA */
+.table-ca {
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+    font-size: 1rem;
+    table {
+        background-color: black;
+        border-collapse: collapse;
+        border: 3px solid darkcyan; }
+    thead {
+        color: darkcyan;
+        th {
+            background-color: black;
+            border-bottom: 3px solid darkcyan; } }
+    th, td {
+        padding: 20px;
+        letter-spacing: 1px;
+        text-align: center; }
+    h4 {
+        color: red;
+        font-size: 1rem; }
+    tr:nth-child(odd) {
+        background-color: #111; }
+    tr:nth-child(even) {
+        background-color: black; } }
+.aclaracion {
+    padding: 30px; }
+
+/* MEDIA QUERY */
+/* MEDIUM */
+@media (max-width: 991px) {
+    /* titulo */
+    .title-ca h2 {
+        font-size: 1.6rem; }
+    /* tabla */
+    .table-ca {
+        font-size: 0.75rem;
+        th, td {
+            padding: 10px; }
+        h4 {
+            font-size: 0.75rem; } } }
+/* CUSTOM */
+@media (max-width: 667px) {
+    /* titulo */
+    .title-ca h2 {
+        font-size: 1.4rem; }
+    /* tabla */
+    .table-ca {
+        font-size: 0.7rem;
+        th, td {
+            padding: 5px; }
+        h4 {
+            font-size: 0.7rem; } } }
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    /* titulo */
+    .title-ca h2 {
+        font-size: 1.1rem; }
+    /* tabla */
+    .table-ca {
+        font-size: 0.6rem;
+        line-height: 0.75rem;
+        th, td {
+            padding: 2.5px; }
+        h4 {
+            font-size: 0.6rem; } } }

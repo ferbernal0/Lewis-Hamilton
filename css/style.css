@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  cursor: url("https://i.ibb.co/7VMmqd8/cursor.png"), auto; }
+
+body {
+  background-color: #111;
+  font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+  line-height: 1.3rem;
+  color: white; }
+
+/* MENU */
+header {
+  height: 54px; }
+  header ul {
+    list-style: none; }
+  header a {
+    font-family: 'Ropa Sans', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 15px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkcyan;
+    transition: color 0.4s;
+    overflow: visible; }
+    header a:hover {
+      color: cyan;
+      text-decoration: none; }
+    header a img {
+      width: 52.3px;
+      height: 40px;
+      margin-left: 10px; }
+
+.navbar-custom {
+  background-color: black; }
+
+.open {
+  color: darkgray; }
+
+.open:hover {
+  color: white; }
+
+/* FOOTER */
+footer {
+  display: grid;
+  height: 120px;
+  background-color: black;
+  justify-content: center; }
+  footer h3 {
+    font-size: 1.3rem;
+    font-family: 'Ropa Sans', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 5px;
+    text-decoration: underline darkcyan; }
+  footer img {
+    height: 75px;
+    width: 75px;
+    margin: 0 5px;
+    filter: grayscale(100%); }
+
+.vacio {
+  width: 45px; }
+
+/* MEDIA QUERY */
+/* SMALL */
+@media (max-width: 767px) {
+  /* footer */
+  footer {
+    height: 100px; }
+    footer h3 {
+      font-size: 1rem; }
+    footer img {
+      height: 50px;
+      width: 50px; }
+  .vacio {
+    width: 25px; } }
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  /* footer */
+  footer {
+    height: 80px; }
+    footer h3 {
+      font-size: 0.7rem; }
+    footer img {
+      height: 25px;
+      width: 25px; }
+  .vacio {
+    width: 5px; } }
+
+/* ----- INDEX ----- */
+.body-i {
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-image: url("https://i.ibb.co/wMkrDSJ/hamilton3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black; }
+
+/* TEXTO */
+.text-i {
+  -webkit-text-stroke: 1.5px darkcyan;
+  color: black;
+  width: 550px;
+  font-weight: 1000;
+  font-size: 6.5rem;
+  line-height: 5.5rem;
+  margin-left: 20px;
+  margin-top: 180px;
+  transition: 1s; }
+  .text-i:hover {
+    -webkit-text-stroke: 1.5px black;
+    color: darkcyan;
+    transform: scale(1.05) translate(15px); }
+
+/* FOOTER */
+.footer-i {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  justify-content: center;
+  bottom: 0; }
+
+#copyright {
+  filter: brightness(25%); }
+
+/* REDES */
+#instagram, #twitter, #facebook {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  margin-top: 10px; }
+
+#instagram {
+  right: 120px; }
+  #instagram:hover {
+    color: #c13584; }
+
+#twitter {
+  right: 80px; }
+  #twitter:hover {
+    color: #1da1f2; }
+
+#facebook {
+  right: 40px; }
+  #facebook:hover {
+    color: #4267b2; }
+
+/* MEDIA QUERY */
+/* MEDIUM */
+@media (max-width: 991px) {
+  .text-i {
+    font-size: 6rem;
+    line-height: 5rem; } }
+
+/* SMALL */
+@media (max-width: 767px) {
+  .text-i {
+    font-size: 5rem;
+    line-height: 4rem; }
+  #copyright {
+    display: none; } }
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  .text-i {
+    font-size: 4rem;
+    line-height: 3rem; } }
+
+.nav-item {
+  justify-content: end; }
+
+/* ----- BIOGRAFIA ----- */
+/* IMAGEN */
+.img-b img {
+  max-width: 420px;
+  max-height: 663.27px;
+  margin-left: 20px;
+  margin-top: 8.69px; }
+
+/* TEXTO */
+.text-b {
+  position: relative;
+  text-align: center;
+  align-content: center;
+  margin: auto 40px; }
+  .text-b h2 {
+    margin-top: 16px;
+    font-size: 2.5rem; }
+  .text-b p {
+    font-size: 1.1rem;
+    font-weight: bold; }
+
+/* MEDIA QUERY */
+/* LARGE */
+@media (max-width: 1199px) {
+  /* imagen */
+  .img-b img {
+    max-width: 320px;
+    max-height: 505.35px; } }
+
+/* MEDIUM */
+@media (max-width: 991px) {
+  .text-b {
+    z-index: -1; } }
+
+/* ----- TRAYECTORIA ----- */
+/* BOXES */
+.box-t {
+  border: 4px solid darkcyan;
+  box-sizing: border-box;
+  width: 550px;
+  height: 390px;
+  margin: 20px 0;
+  border-radius: 15px;
+  transition: border 0.7s; }
+  .box-t:hover {
+    border: 4px solid cyan; }
+
+/* H2 */
+.box-t h2 {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 0px;
+  margin: 30px 20px; }
+
+.box-t-right h2 {
+  text-align: right; }
+
+/* IMAGENES */
+.img-t {
+  width: 500px;
+  height: 300px;
+  margin: 0 20px;
+  background-size: cover;
+  border-radius: 15px; }
+
+/* FONDO */
+.info-t {
+  overflow: hidden;
+  width: 500px;
+  height: 300px;
+  background-color: #1f1f1f;
+  opacity: 0;
+  transition: all 0.7s; }
+  .info-t:hover {
+    opacity: 0.9;
+    border-radius: 15px; }
+
+/* TEXTO */
+.text-t {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+  font-size: 1.5rem; }
+  .text-t p {
+    padding: 0 20px;
+    line-height: 1.5rem; }
+
+/* LINKS IMAGENES */
+/* BOXES */
+/* BOX 1 (1995) */
+#img1 {
+  background-image: url("https://elintra.com.ar/wp-content/uploads/2020/11/Lewis-Hamilton-2-3.jpg"); }
+
+/* BOX 2 (1999-2000) */
+#img2 {
+  background-image: url("https://www.livesportcentre.com/wp-content/uploads/2020/11/embedded256257372-1536x1053.jpg"); }
+
+/* BOX 3 (2001-2003) */
+#img3 {
+  background-image: url("https://ep00.epimg.net/elpais/imagenes/2015/05/06/album/1430930105_297570_1431115921_album_normal.jpg"); }
+
+/* BOX 4 (2004-2005) */
+#img4 {
+  background-image: url("https://prints.motorsportimages.com/p/745/5th-f3-korea-super-prix-lewis-hamilton-manor-3329173.jpg"); }
+
+/* BOX 5 (2006) */
+#img5 {
+  background-image: url("https://i.redd.it/ain6dnxc4xf21.jpg"); }
+
+/* BOX 6 (2007) */
+#img6 {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Lewis_Hamilton_2007_Canada.jpg/1280px-Lewis_Hamilton_2007_Canada.jpg"); }
+
+/* BOX 7 (2008) */
+#img7 {
+  background-image: url("https://www.momentogp.com/wp-content/uploads/2019/03/ham20082.jpg"); }
+
+/* BOX 8 (2009-2012) */
+#img8 {
+  background-image: url("https://cdn-1.motorsport.com/images/amp/G0ovex16/s6/f1-malaysian-gp-2012-michael-s.jpg"); }
+
+/* BOX 9 (2013) */
+#img9 {
+  background-image: url("https://www.f1-fansite.com/wp-content/uploads/2013/03/539253556-05551632013-Large.jpg"); }
+
+/* BOX 10 (2014) */
+#img10 {
+  background-image: url("http://www.diariodigitalcolombiano.com/wp-content/uploads/2015/07/Hamilton-800x445.png"); }
+
+/* BOX 11 (2015) */
+#img11 {
+  background-image: url("https://elcuentakilometro.files.wordpress.com/2016/01/hamilton-2015-e1451826651478.jpg"); }
+
+/* BOX 12 (2016) */
+#img12 {
+  background-image: url("https://e2.365dm.com/16/10/768x432/f1-conclusions-2014-f1-season_3800531.jpg"); }
+
+/* BOX 13 (2017) */
+#img13 {
+  background-image: url("https://static.dw.com/image/41163632_303.jpg"); }
+
+/* BOX 14 (2018) */
+#img14 {
+  background-image: url("https://poleman.com.ar/wp-content/uploads/2020/04/hamilton-msj-redes.jpg"); }
+
+/* BOX 15 (2019) */
+#img15 {
+  background-image: url("https://www.monsterenergy.com/media/uploads_image/2019/08/05/1600/800/8c6b9fd75efa9c475eb7443e2ef2ca38.jpg"); }
+
+/* BOX 16 (2020) */
+#img16 {
+  background-image: url("https://as.com/motor/imagenes/2020/11/15/formula_1/1605470980_963667_1605471055_noticia_normal_recorte1.jpg"); }
+
+/* BOX 17 (2021) */
+#img17 {
+  background-image: url("https://soymotor.com/sites/default/files/imagenes/noticia/hamilton-victoria-barein-f1-2021-soymotor.jpg"); }
+
+/* ----- CARRERAS ----- */
+/* TITULO */
+.title-ca h2 {
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 1.8rem; }
+
+/* TABLA */
+.table-ca {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  font-size: 1rem; }
+  .table-ca table {
+    background-color: black;
+    border-collapse: collapse;
+    border: 3px solid darkcyan; }
+  .table-ca thead {
+    color: darkcyan; }
+    .table-ca thead th {
+      background-color: black;
+      border-bottom: 3px solid darkcyan; }
+  .table-ca th, .table-ca td {
+    padding: 20px;
+    letter-spacing: 1px;
+    text-align: center; }
+  .table-ca h4 {
+    color: red;
+    font-size: 1rem; }
+  .table-ca tr:nth-child(odd) {
+    background-color: #111; }
+  .table-ca tr:nth-child(even) {
+    background-color: black; }
+
+.aclaracion {
+  padding: 30px; }
+
+/* MEDIA QUERY */
+/* MEDIUM */
+@media (max-width: 991px) {
+  /* titulo */
+  .title-ca h2 {
+    font-size: 1.6rem; }
+  /* tabla */
+  .table-ca {
+    font-size: 0.75rem; }
+    .table-ca th, .table-ca td {
+      padding: 10px; }
+    .table-ca h4 {
+      font-size: 0.75rem; } }
+
+/* CUSTOM */
+@media (max-width: 667px) {
+  /* titulo */
+  .title-ca h2 {
+    font-size: 1.4rem; }
+  /* tabla */
+  .table-ca {
+    font-size: 0.7rem; }
+    .table-ca th, .table-ca td {
+      padding: 5px; }
+    .table-ca h4 {
+      font-size: 0.7rem; } }
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  /* titulo */
+  .title-ca h2 {
+    font-size: 1.1rem; }
+  /* tabla */
+  .table-ca {
+    font-size: 0.6rem;
+    line-height: 0.75rem; }
+    .table-ca th, .table-ca td {
+      padding: 2.5px; }
+    .table-ca h4 {
+      font-size: 0.6rem; } }
+
+/* ----- CONTACTO ----- */
+/* PANEL */
+.panel-co {
+  position: relative;
+  padding: 10px 0; }
+  .panel-co h2 {
+    font-size: 2rem;
+    line-height: 50px;
+    margin-left: 20px; }
+  .panel-co fieldset {
+    height: 405px;
+    width: 400px;
+    margin-left: 20px;
+    border: 2px darkcyan solid;
+    border-radius: 5px; }
+  .panel-co legend {
+    font-size: 1.5rem;
+    margin-left: 20px; }
+  .panel-co input {
+    background-color: transparent;
+    font-size: 1.1rem;
+    color: white;
+    border: 3px;
+    width: 350px;
+    height: 50px;
+    margin-left: 10px; }
+  .panel-co label {
+    font-size: 1.25rem;
+    margin-left: 10px; }
+  .panel-co textarea {
+    background-color: transparent;
+    border-color: darkcyan;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px; }
+  .panel-co .enviar {
+    background-color: darkcyan;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    width: 85px;
+    height: 35px;
+    margin-left: 10px;
+    transition: all 0.4s; }
+    .panel-co .enviar:hover {
+      background-color: black;
+      color: darkcyan; }
+
+/* IMAGEN */
+.img-co img {
+  position: relative;
+  width: 498.44px;
+  height: 430px; }
+
+/* MEDIA QUERY */
+/* MEDIUM */
+@media (max-width: 991px) {
+  .panel-co {
+    z-index: -1; } }
+
+/* ----- 404 ----- */
+.body-404 {
+  background-color: black;
+  /* TEXTO */ }
+  .body-404 h2 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    color: darkcyan;
+    background-color: #111; }
+  .body-404 h1 {
+    text-align: center;
+    font-size: 10rem;
+    color: black;
+    -webkit-text-stroke: 1px cyan; }
+  .body-404 h3 {
+    margin-top: 2rem;
+    text-align: center; }
+    .body-404 h3 a {
+      color: black;
+      background-color: darkcyan;
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: "Inconsolata", monospace;
+      transition: 0.5s; }
+      .body-404 h3 a:hover {
+        background-color: cyan;
+        color: black;
+        text-decoration: none; }
