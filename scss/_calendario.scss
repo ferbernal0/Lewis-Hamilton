@@ -1,0 +1,64 @@
+/* ----- CALENDARIO ----- */
+/* CIRCUITOS */
+.title-cal h2 {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 1.8rem; }
+.resultados, .detalles {
+    border: solid 3px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 5px; }
+  .resultados {
+    border-color: cyan;
+    background-color: black;
+    color: white; }
+  .detalles {
+    border-color: darkcyan;
+    background: black; }
+.race {
+    line-height: 2rem; }
+    .ronda {
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem; }
+    .lugar {
+        font-size: 1.2rem;
+        letter-spacing: 0.15rem;
+        color: cyan; }
+    .fecha {
+        font-size: 0.9rem;
+        letter-spacing: 0.10rem; }
+.circuitos {
+    width: 200px;
+    height: 150px;
+    padding: 10px 0;
+    & img {
+        width: 90%;
+        height: 90%;
+        object-fit: contain; } }
+.btn-outline {
+    color: darkcyan;
+    border: solid 1px darkcyan; }
+    .btn-outline:hover {
+        color: cyan;
+        border-color: cyan; }
+.btn-filled {
+    color: darkcyan;
+    border-top: solid 3px darkcyan; }
+    .btn-filled:hover {
+        color: cyan; }
+/* INFO */
+.modal-content {
+    background: black;
+    border: solid 3px darkcyan; }
+.modal-title {
+    font-size: 1.5rem; }
+.autodromos img {
+    width: 400px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: solid 1px black; }
+.posicion {
+    margin-top: 10px;
+    font-weight: 600; }
