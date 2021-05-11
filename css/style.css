@@ -9,7 +9,7 @@ html {
   cursor: url("https://i.ibb.co/7VMmqd8/cursor.png"), auto; }
 
 body {
-  background-color: #111;
+  background-color: black;
   font-family: "Titillium Web", Helvetica, Arial, sans-serif;
   line-height: 1.3rem;
   color: white; }
@@ -23,7 +23,7 @@ header {
     font-family: 'Ropa Sans', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px 15px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: bold;
     color: darkcyan;
     transition: color 0.4s;
@@ -32,13 +32,17 @@ header {
     header a:hover {
       color: cyan;
       text-decoration: none; }
-    header a img {
-      width: 52.3px;
-      height: 40px;
-      margin-left: 10px; }
+
+.logo img {
+  width: 52.3px;
+  height: 40px;
+  margin-left: 10px; }
 
 .navbar-custom {
-  background-color: black; }
+  border-bottom: solid 1px #111;
+  transition: border-color ease-in-out 0.7s; }
+  .navbar-custom:hover {
+    border-color: darkcyan; }
 
 .open {
   color: darkgray; }
@@ -49,8 +53,8 @@ header {
 /* FOOTER */
 /* PARTNERS */
 .partners {
-  background-color: black;
-  text-align: center; }
+  text-align: center;
+  border-top: solid 1px #111; }
   .partners img {
     max-width: 45%;
     transition: all 0.35s ease-in-out;
@@ -65,9 +69,9 @@ header {
 .redes-copy {
   width: 100%;
   height: 50px;
-  background-color: black;
   justify-content: center;
-  bottom: 0; }
+  bottom: 0;
+  border-top: solid 1px #111; }
 
 #copyright {
   filter: brightness(25%); }
@@ -95,6 +99,11 @@ header {
     color: #4267b2; }
 
 /* MEDIA QUERY */
+/* MEDIUM */
+@media (max-width: 992px) {
+  .logo img {
+    margin-left: 0; } }
+
 /* SMALL */
 @media (max-width: 767px) {
   .redes-copy img {
@@ -105,7 +114,6 @@ header {
 /* ----- INDEX ----- */
 .body-i {
   font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-image: url("https://i.ibb.co/wMkrDSJ/hamilton3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -127,40 +135,6 @@ header {
     color: darkcyan;
     transform: scale(1.05) translate(15px); }
 
-/* FOOTER */
-.footer-i {
-  position: absolute;
-  width: 100%;
-  height: 50px;
-  background-color: black;
-  justify-content: center;
-  bottom: 0; }
-
-#copyright {
-  filter: brightness(25%); }
-
-/* REDES */
-#instagram, #twitter, #facebook {
-  position: absolute;
-  color: white;
-  font-size: 2rem;
-  margin-top: 10px; }
-
-#instagram {
-  right: 120px; }
-  #instagram:hover {
-    color: #c13584; }
-
-#twitter {
-  right: 80px; }
-  #twitter:hover {
-    color: #1da1f2; }
-
-#facebook {
-  right: 40px; }
-  #facebook:hover {
-    color: #4267b2; }
-
 /* MEDIA QUERY */
 /* MEDIUM */
 @media (max-width: 991px) {
@@ -172,18 +146,13 @@ header {
 @media (max-width: 767px) {
   .text-i {
     font-size: 5rem;
-    line-height: 4rem; }
-  #copyright {
-    display: none; } }
+    line-height: 4rem; } }
 
 /* EXTRA SMALL */
 @media (max-width: 575px) {
   .text-i {
     font-size: 4rem;
     line-height: 3rem; } }
-
-.nav-item {
-  justify-content: end; }
 
 /* ----- BIOGRAFIA ----- */
 /* IMAGEN */
@@ -214,11 +183,6 @@ header {
     max-width: 320px;
     max-height: 505.35px; } }
 
-/* MEDIUM */
-@media (max-width: 991px) {
-  .text-b {
-    z-index: -1; } }
-
 /* ----- CALENDARIO ----- */
 /* CIRCUITOS */
 .title-cal h2 {
@@ -234,7 +198,6 @@ header {
 
 .resultados {
   border-color: cyan;
-  background-color: black;
   color: white; }
 
 .detalles {
@@ -293,12 +256,18 @@ header {
   width: 400px;
   height: 225px;
   object-fit: cover;
-  border-radius: 5px;
-  border: solid 1px black; }
+  border-radius: 5px; }
 
 .posicion {
   margin-top: 10px;
   font-weight: 600; }
+
+/* MEDIA QUERY */
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  .autodromos img {
+    width: 330px;
+    height: 191.25px; } }
 
 /* ----- TRAYECTORIA ----- */
 /* BOXES */
@@ -308,10 +277,10 @@ header {
   width: 550px;
   height: 390px;
   margin: 20px 0;
-  border-radius: 15px;
+  border-radius: 7.5px;
   transition: border 0.7s; }
   .box-t:hover {
-    border: 4px solid cyan; }
+    border: solid 4px cyan; }
 
 /* H2 */
 .box-t h2 {
@@ -329,19 +298,19 @@ header {
   height: 300px;
   margin: 0 20px;
   background-size: cover;
-  border-radius: 15px; }
+  border-radius: 5px; }
 
 /* FONDO */
 .info-t {
   overflow: hidden;
   width: 500px;
   height: 300px;
-  background-color: #1f1f1f;
+  background-color: #111;
   opacity: 0;
   transition: all 0.7s; }
   .info-t:hover {
     opacity: 0.9;
-    border-radius: 15px; }
+    border-radius: 5px; }
 
 /* TEXTO */
 .text-t {
@@ -351,10 +320,9 @@ header {
   width: 500px;
   height: 300px;
   text-align: center;
-  font-size: 1.5rem; }
-  .text-t p {
-    padding: 0 20px;
-    line-height: 1.5rem; }
+  font-size: 1.5rem;
+  padding: 0 20px;
+  line-height: 1.5rem; }
 
 /* LINKS IMAGENES */
 /* BOXES */
@@ -426,6 +394,41 @@ header {
 #img17 {
   background-image: url("https://i.ibb.co/pbJPrGx/LH-2021.jpg"); }
 
+/* MEDIA QUERY */
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  .box-t {
+    width: 450px;
+    height: 330px; }
+  .img-t {
+    width: 400px;
+    height: 240px; }
+  .info-t {
+    width: 400px;
+    height: 240px; }
+  .text-t {
+    width: 400px;
+    height: 240px;
+    font-size: 1.25rem;
+    line-height: 1.25rem; } }
+
+/* CUSTOM */
+@media (max-width: 475px) {
+  .box-t {
+    width: 350px;
+    height: 270px; }
+  .img-t {
+    width: 300px;
+    height: 180px; }
+  .info-t {
+    width: 300px;
+    height: 180px; }
+  .text-t {
+    width: 300px;
+    height: 180px;
+    font-size: 1rem;
+    line-height: 1rem; } }
+
 /* ----- CARRERAS ----- */
 /* TITULO */
 .title-car h2 {
@@ -440,7 +443,6 @@ header {
   margin: 0 20px;
   font-size: 1rem; }
   .table-car table {
-    background-color: black;
     border-collapse: collapse;
     border: 3px solid darkcyan; }
   .table-car thead {
@@ -452,9 +454,8 @@ header {
     padding: 20px;
     letter-spacing: 1px;
     text-align: center; }
-  .table-car h4 {
-    color: red;
-    font-size: 1rem; }
+  .table-car .win {
+    color: cyan; }
   .table-car tr:nth-child(odd) {
     background-color: #111; }
   .table-car tr:nth-child(even) {
@@ -473,9 +474,7 @@ header {
   .table-car {
     font-size: 0.75rem; }
     .table-car th, .table-car td {
-      padding: 10px; }
-    .table-car h4 {
-      font-size: 0.75rem; } }
+      padding: 10px; } }
 
 /* CUSTOM */
 @media (max-width: 667px) {
@@ -486,9 +485,7 @@ header {
   .table-car {
     font-size: 0.7rem; }
     .table-car th, .table-car td {
-      padding: 5px; }
-    .table-car h4 {
-      font-size: 0.7rem; } }
+      padding: 5px; } }
 
 /* EXTRA SMALL */
 @media (max-width: 575px) {
@@ -500,9 +497,7 @@ header {
     font-size: 0.6rem;
     line-height: 0.75rem; }
     .table-car th, .table-car td {
-      padding: 2.5px; }
-    .table-car h4 {
-      font-size: 0.6rem; } }
+      padding: 2.5px; } }
 
 /* ----- CONTACTO ----- */
 /* PANEL */
@@ -559,12 +554,6 @@ header {
   position: relative;
   width: 498.44px;
   height: 430px; }
-
-/* MEDIA QUERY */
-/* MEDIUM */
-@media (max-width: 991px) {
-  .panel-co {
-    z-index: -1; } }
 
 /* ----- 404 ----- */
 .body-404 {

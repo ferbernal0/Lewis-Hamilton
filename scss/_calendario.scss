@@ -11,7 +11,6 @@
     margin: 10px 5px; }
   .resultados {
     border-color: cyan;
-    background-color: black;
     color: white; }
   .detalles {
     border-color: darkcyan;
@@ -57,8 +56,14 @@
     width: 400px;
     height: 225px;
     object-fit: cover;
-    border-radius: 5px;
-    border: solid 1px black; }
+    border-radius: 5px; }
 .posicion {
     margin-top: 10px;
     font-weight: 600; }
+
+/* MEDIA QUERY */
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    .autodromos img {
+        width: 330px;
+        height: 191.25px; } }

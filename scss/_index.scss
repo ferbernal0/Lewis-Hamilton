@@ -1,7 +1,6 @@
 /* ----- INDEX ----- */
 .body-i {
     font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-image: url("https://i.ibb.co/wMkrDSJ/hamilton3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,34 +20,6 @@
         -webkit-text-stroke: 1.5px black;
         color: darkcyan;
         transform: scale(1.05) translate(15px); } }
-/* FOOTER */
-.footer-i {
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    justify-content: center;
-    bottom: 0; }
-#copyright {
-    filter: brightness(25%); }
-/* REDES */
-#instagram, #twitter, #facebook {
-    position: absolute;
-    color: white;
-    font-size: 2rem;
-    margin-top: 10px; }
-#instagram {
-    right: 120px;
-    &:hover {
-        color: #c13584; } }
-#twitter {
-    right: 80px;
-    &:hover {
-        color: #1da1f2; } }
-#facebook {
-    right: 40px;
-    &:hover {
-        color: #4267b2; } }
 
 /* MEDIA QUERY */
 /* MEDIUM */
@@ -60,15 +31,9 @@
 @media (max-width: 767px) {
     .text-i {
         font-size: 5rem;
-        line-height: 4rem; }
-    #copyright {
-        display: none; } }
+        line-height: 4rem; } }
 /* EXTRA SMALL */
 @media (max-width: 575px) {
     .text-i {
         font-size: 4rem;
         line-height: 3rem; } }
-
-.nav-item {
-    justify-content: end;
-}
