@@ -24,7 +24,8 @@ header {
         font-weight: bold;
         color: darkcyan;
         transition: color 0.4s;
-        overflow: visible;
+        letter-spacing: 0.05rem;
+        line-height: 1.5rem;;
         &:hover {
             color: cyan;
             text-decoration: none; }
@@ -38,47 +39,53 @@ header {
     color: darkgray; }
     .open:hover {
         color: white; }
+
 /* FOOTER */
-footer {
-    display: grid;
-    height: 120px;
-    background-color: black;
-    justify-content: center;
-    h3 {
-        font-size: 1.3rem;
-        font-family: 'Ropa Sans', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-        margin-top: 5px;
-        text-decoration: underline darkcyan; }
-    img {
-        height: 75px;
-        width: 75px;
-        margin: 0 5px;
-        filter: grayscale(100%); } }
-    .vacio {
-        width: 45px; }
+/* PARTNERS */
+.partners {
+  background-color: black;
+  text-align: center;
+  & img {
+    max-width: 45%;
+    transition: all 0.35s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+    filter: grayscale(100);
+    &:hover {
+      filter: none;
+      transform: scale(1.15); } } }
+/* REDES Y COPY */
+.redes-copy {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  justify-content: center;
+  bottom: 0; }
+#copyright {
+  filter: brightness(25%); }
+#instagram, #twitter, #facebook {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  margin-top: 10px;
+  transition: all 0.35s; }
+#instagram {
+  right: 120px;
+  &:hover {
+    color: #c13584; } }
+#twitter {
+  right: 80px;
+  &:hover {
+    color: #1da1f2; } }
+#facebook {
+  right: 40px;
+  &:hover {
+    color: #4267b2; } }
 
 /* MEDIA QUERY */
 /* SMALL */
 @media (max-width: 767px) {
-    /* footer */
-    footer {
-        height: 100px;
-        h3 {
-            font-size: 1rem; }
-        img {
-            height: 50px;
-            width: 50px; } }
-        .vacio {
-            width: 25px; } }
-/* EXTRA SMALL */
-@media (max-width: 575px) {
-    /* footer */
-    footer {
-        height: 80px;
-        h3 {
-            font-size: 0.7rem; }
-        img {
-            height: 25px;
-            width: 25px; } }
-        .vacio {
-            width: 5px; } }
+  .redes-copy img {
+    max-width: 40%; }
+  #copyright {
+    display: none; } }

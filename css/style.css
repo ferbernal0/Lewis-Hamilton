@@ -27,7 +27,8 @@ header {
     font-weight: bold;
     color: darkcyan;
     transition: color 0.4s;
-    overflow: visible; }
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem; }
     header a:hover {
       color: cyan;
       text-decoration: none; }
@@ -46,51 +47,60 @@ header {
   color: white; }
 
 /* FOOTER */
-footer {
-  display: grid;
-  height: 120px;
+/* PARTNERS */
+.partners {
   background-color: black;
-  justify-content: center; }
-  footer h3 {
-    font-size: 1.3rem;
-    font-family: 'Ropa Sans', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: 5px;
-    text-decoration: underline darkcyan; }
-  footer img {
-    height: 75px;
-    width: 75px;
-    margin: 0 5px;
-    filter: grayscale(100%); }
+  text-align: center; }
+  .partners img {
+    max-width: 45%;
+    transition: all 0.35s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+    filter: grayscale(100); }
+    .partners img:hover {
+      filter: none;
+      transform: scale(1.15); }
 
-.vacio {
-  width: 45px; }
+/* REDES Y COPY */
+.redes-copy {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  justify-content: center;
+  bottom: 0; }
+
+#copyright {
+  filter: brightness(25%); }
+
+#instagram, #twitter, #facebook {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  margin-top: 10px;
+  transition: all 0.35s; }
+
+#instagram {
+  right: 120px; }
+  #instagram:hover {
+    color: #c13584; }
+
+#twitter {
+  right: 80px; }
+  #twitter:hover {
+    color: #1da1f2; }
+
+#facebook {
+  right: 40px; }
+  #facebook:hover {
+    color: #4267b2; }
 
 /* MEDIA QUERY */
 /* SMALL */
 @media (max-width: 767px) {
-  /* footer */
-  footer {
-    height: 100px; }
-    footer h3 {
-      font-size: 1rem; }
-    footer img {
-      height: 50px;
-      width: 50px; }
-  .vacio {
-    width: 25px; } }
-
-/* EXTRA SMALL */
-@media (max-width: 575px) {
-  /* footer */
-  footer {
-    height: 80px; }
-    footer h3 {
-      font-size: 0.7rem; }
-    footer img {
-      height: 25px;
-      width: 25px; }
-  .vacio {
-    width: 5px; } }
+  .redes-copy img {
+    max-width: 40%; }
+  #copyright {
+    display: none; } }
 
 /* ----- INDEX ----- */
 .body-i {
@@ -337,36 +347,36 @@ footer {
 
 /* ----- CARRERAS ----- */
 /* TITULO */
-.title-ca h2 {
+.title-car h2 {
   margin-top: 15px;
   margin-left: 20px;
   font-size: 1.8rem; }
 
 /* TABLA */
-.table-ca {
+.table-car {
   display: flex;
   justify-content: center;
   margin: 0 20px;
   font-size: 1rem; }
-  .table-ca table {
+  .table-car table {
     background-color: black;
     border-collapse: collapse;
     border: 3px solid darkcyan; }
-  .table-ca thead {
+  .table-car thead {
     color: darkcyan; }
-    .table-ca thead th {
+    .table-car thead th {
       background-color: black;
       border-bottom: 3px solid darkcyan; }
-  .table-ca th, .table-ca td {
+  .table-car th, .table-car td {
     padding: 20px;
     letter-spacing: 1px;
     text-align: center; }
-  .table-ca h4 {
+  .table-car h4 {
     color: red;
     font-size: 1rem; }
-  .table-ca tr:nth-child(odd) {
+  .table-car tr:nth-child(odd) {
     background-color: #111; }
-  .table-ca tr:nth-child(even) {
+  .table-car tr:nth-child(even) {
     background-color: black; }
 
 .aclaracion {
@@ -376,41 +386,41 @@ footer {
 /* MEDIUM */
 @media (max-width: 991px) {
   /* titulo */
-  .title-ca h2 {
+  .title-car h2 {
     font-size: 1.6rem; }
   /* tabla */
-  .table-ca {
+  .table-car {
     font-size: 0.75rem; }
-    .table-ca th, .table-ca td {
+    .table-car th, .table-car td {
       padding: 10px; }
-    .table-ca h4 {
+    .table-car h4 {
       font-size: 0.75rem; } }
 
 /* CUSTOM */
 @media (max-width: 667px) {
   /* titulo */
-  .title-ca h2 {
+  .title-car h2 {
     font-size: 1.4rem; }
   /* tabla */
-  .table-ca {
+  .table-car {
     font-size: 0.7rem; }
-    .table-ca th, .table-ca td {
+    .table-car th, .table-car td {
       padding: 5px; }
-    .table-ca h4 {
+    .table-car h4 {
       font-size: 0.7rem; } }
 
 /* EXTRA SMALL */
 @media (max-width: 575px) {
   /* titulo */
-  .title-ca h2 {
+  .title-car h2 {
     font-size: 1.1rem; }
   /* tabla */
-  .table-ca {
+  .table-car {
     font-size: 0.6rem;
     line-height: 0.75rem; }
-    .table-ca th, .table-ca td {
+    .table-car th, .table-car td {
       padding: 2.5px; }
-    .table-ca h4 {
+    .table-car h4 {
       font-size: 0.6rem; } }
 
 /* ----- CONTACTO ----- */

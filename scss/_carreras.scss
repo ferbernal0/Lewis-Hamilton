@@ -1,11 +1,11 @@
 /* ----- CARRERAS ----- */
 /* TITULO */
-.title-ca h2 {
+.title-car h2 {
     margin-top: 15px;
     margin-left: 20px;
     font-size: 1.8rem; }
 /* TABLA */
-.table-ca {
+.table-car {
     display: flex;
     justify-content: center;
     margin: 0 20px;
@@ -37,10 +37,10 @@
 /* MEDIUM */
 @media (max-width: 991px) {
     /* titulo */
-    .title-ca h2 {
+    .title-car h2 {
         font-size: 1.6rem; }
     /* tabla */
-    .table-ca {
+    .table-car {
         font-size: 0.75rem;
         th, td {
             padding: 10px; }
@@ -49,10 +49,10 @@
 /* CUSTOM */
 @media (max-width: 667px) {
     /* titulo */
-    .title-ca h2 {
+    .title-car h2 {
         font-size: 1.4rem; }
     /* tabla */
-    .table-ca {
+    .table-car {
         font-size: 0.7rem;
         th, td {
             padding: 5px; }
@@ -61,10 +61,10 @@
 /* EXTRA SMALL */
 @media (max-width: 575px) {
     /* titulo */
-    .title-ca h2 {
+    .title-car h2 {
         font-size: 1.1rem; }
     /* tabla */
-    .table-ca {
+    .table-car {
         font-size: 0.6rem;
         line-height: 0.75rem;
         th, td {
