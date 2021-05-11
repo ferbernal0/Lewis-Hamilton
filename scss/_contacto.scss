@@ -3,10 +3,6 @@
 .panel-co {
     position: relative;
     padding: 10px 0;
-    h2 {
-        font-size: 2rem;
-        line-height: 50px;
-        margin-left: 20px; }
     fieldset {
         height: 405px;
         width: 400px;
@@ -15,6 +11,7 @@
         border-radius: 5px; }
     legend {
         font-size: 1.5rem;
+        width: 138px;
         margin-left: 20px; }
     input {
         background-color: transparent;
@@ -49,6 +46,15 @@
             color: darkcyan; } } }
 /* IMAGEN */
 .img-co img {
-    position: relative;
-    width: 498.44px;
-    height: 430px; }
+    width: 452.53px;
+    height: 390px; }
+
+/* MEDIA QUERY */
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    fieldset {
+        width: 350px;
+        height: 355px; }
+    input {
+        width: 300px;
+        height: 50px; } }

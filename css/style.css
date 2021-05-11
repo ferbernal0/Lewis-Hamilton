@@ -39,6 +39,7 @@ header {
   margin-left: 10px; }
 
 .navbar-custom {
+  background-color: black;
   border-bottom: solid 1px #111;
   transition: border-color ease-in-out 0.7s; }
   .navbar-custom:hover {
@@ -185,11 +186,6 @@ header {
 
 /* ----- CALENDARIO ----- */
 /* CIRCUITOS */
-.title-cal h2 {
-  margin-top: 15px;
-  margin-left: 20px;
-  font-size: 1.8rem; }
-
 .resultados, .detalles {
   border: solid 3px;
   border-radius: 5px;
@@ -276,7 +272,7 @@ header {
   box-sizing: border-box;
   width: 550px;
   height: 390px;
-  margin: 20px 0;
+  margin: 10px 0 20px 0;
   border-radius: 7.5px;
   transition: border 0.7s; }
   .box-t:hover {
@@ -430,21 +426,15 @@ header {
     line-height: 1rem; } }
 
 /* ----- CARRERAS ----- */
-/* TITULO */
-.title-car h2 {
-  margin-top: 15px;
-  margin-left: 20px;
-  font-size: 1.8rem; }
-
 /* TABLA */
 .table-car {
   display: flex;
   justify-content: center;
-  margin: 0 20px;
+  margin: 10px 20px 0 20px;
   font-size: 1rem; }
   .table-car table {
     border-collapse: collapse;
-    border: 3px solid darkcyan; }
+    border: solid 3px darkcyan; }
   .table-car thead {
     color: darkcyan; }
     .table-car thead th {
@@ -461,6 +451,15 @@ header {
   .table-car tr:nth-child(even) {
     background-color: black; }
 
+#t-corto:before {
+  content: "TEMPORADA"; }
+
+#c-corto:before {
+  content: "CARRERAS"; }
+
+#v-corto:before {
+  content: "VICTORIAS"; }
+
 .aclaracion {
   padding: 30px; }
 
@@ -474,7 +473,13 @@ header {
   .table-car {
     font-size: 0.75rem; }
     .table-car th, .table-car td {
-      padding: 10px; } }
+      padding: 10px; }
+  #t-corto:before {
+    content: "TEMP."; }
+  #c-corto:before {
+    content: "CARR."; }
+  #v-corto:before {
+    content: "VIC."; } }
 
 /* CUSTOM */
 @media (max-width: 667px) {
@@ -504,10 +509,6 @@ header {
 .panel-co {
   position: relative;
   padding: 10px 0; }
-  .panel-co h2 {
-    font-size: 2rem;
-    line-height: 50px;
-    margin-left: 20px; }
   .panel-co fieldset {
     height: 405px;
     width: 400px;
@@ -516,6 +517,7 @@ header {
     border-radius: 5px; }
   .panel-co legend {
     font-size: 1.5rem;
+    width: 138px;
     margin-left: 20px; }
   .panel-co input {
     background-color: transparent;
@@ -551,9 +553,18 @@ header {
 
 /* IMAGEN */
 .img-co img {
-  position: relative;
-  width: 498.44px;
-  height: 430px; }
+  width: 452.53px;
+  height: 390px; }
+
+/* MEDIA QUERY */
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  fieldset {
+    width: 350px;
+    height: 355px; }
+  input {
+    width: 300px;
+    height: 50px; } }
 
 /* ----- 404 ----- */
 .body-404 {
