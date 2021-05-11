@@ -101,9 +101,11 @@ header {
 
 /* MEDIA QUERY */
 /* MEDIUM */
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .logo img {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .partners img {
+    max-width: 25%; } }
 
 /* SMALL */
 @media (max-width: 767px) {
@@ -535,7 +537,9 @@ header {
     border-color: darkcyan;
     color: white;
     border-radius: 5px;
-    margin-left: 10px; }
+    margin-left: 10px;
+    width: 375px;
+    height: 100px; }
   .panel-co .enviar {
     background-color: darkcyan;
     border-radius: 5px;
@@ -559,12 +563,13 @@ header {
 /* MEDIA QUERY */
 /* EXTRA SMALL */
 @media (max-width: 575px) {
-  fieldset {
-    width: 350px;
-    height: 355px; }
-  input {
+  .panel-co fieldset {
+    width: 350px; }
+  .panel-co input {
     width: 300px;
-    height: 50px; } }
+    height: 50px; }
+  .panel-co textarea {
+    width: 325px; } }
 
 /* ----- 404 ----- */
 .body-404 {
