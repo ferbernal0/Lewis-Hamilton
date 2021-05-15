@@ -1,10 +1,12 @@
 /* ----- BIOGRAFIA ----- */
+/* FONDO */
+#fondo-b::before {
+    background-image: url("https://i.ibb.co/gmXy7nk/Fondo-Biografia.jpg"); }
 /* IMAGEN */
 .img-b img {
     max-width: 420px;
     max-height: 663.27px;
-    margin-left: 20px;
-    margin-top: 8.69px; }
+    margin-left: 20px; }
 /* TEXTO */
 .text-b {
     position: relative;

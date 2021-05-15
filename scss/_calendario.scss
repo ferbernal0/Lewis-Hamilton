@@ -1,4 +1,7 @@
 /* ----- CALENDARIO ----- */
+/* FONDO */
+#fondo-cal::before {
+    background-image: url("https://i.ibb.co/7SHY9st/Fondo-Calendario.jpg"); }
 /* CIRCUITOS */
 .resultados, .detalles {
     border: solid 3px;

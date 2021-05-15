@@ -52,6 +52,40 @@ header {
 .open:hover {
   color: white; }
 
+/* FONDOS SECCIONES */
+.fondo-sec {
+  height: 250px;
+  margin-bottom: 10px; }
+  .fondo-sec::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(100%); }
+
+.degradado {
+  background: black;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: grayscale(0%); }
+
+.text-fondo {
+  -webkit-text-stroke: 3px black;
+  color: darkcyan;
+  font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 4.5rem;
+  transition: all 0.7s; }
+  .text-fondo:hover {
+    transform: scale(1.1); }
+
 /* FOOTER */
 /* PARTNERS */
 .partners {
@@ -103,15 +137,29 @@ header {
 /* MEDIA QUERY */
 /* MEDIUM */
 @media (max-width: 991px) {
+  /* logo menu */
   .logo img {
-    margin-left: 0; } }
+    margin-left: 0; }
+  /* fondo secciones */
+  .text-fondo {
+    font-size: 4rem; } }
 
 /* SMALL */
 @media (max-width: 767px) {
+  /* fondo secciones */
+  .text-fondo {
+    font-size: 3.5rem; }
+  /* footer */
   .redes-copy img {
     max-width: 40%; }
   #copyright {
     display: none; } }
+
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  /* fondo secciones */
+  .text-fondo {
+    font-size: 3rem; } }
 
 /* ----- INDEX ----- */
 .body-i {
@@ -189,46 +237,42 @@ header {
 @media (max-width: 991px) {
   .text-i {
     font-size: 6rem;
-    line-height: 5rem;
-    width: 500px; } }
+    line-height: 5rem; } }
 
 /* SMALL */
 @media (max-width: 767px) {
   .text-i {
     font-size: 5rem;
-    line-height: 4rem;
-    width: 400px; } }
+    line-height: 4rem; } }
 
 /* EXTRA SMALL */
 @media (max-width: 575px) {
   .text-i {
     font-size: 4rem;
-    line-height: 3rem;
-    width: 300px; } }
+    line-height: 3.25rem; } }
 
 #fondo-i {
   background-image: url("https://i.ibb.co/1mmRDnS/Fondo-LH-5.jpg");
   height: 606px;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  align-items: center; }
+  background-repeat: no-repeat; }
+
+@media (max-width: 991px) {
+  #fondo-i {
+    background-position: right; } }
 
 .btn-relleno {
   color: black;
   background-color: darkcyan;
   font-size: 1.25rem;
   border: solid 2px black;
-  transition: all 0.4s; }
+  transition: all 0.4s;
+  margin-bottom: 10px; }
 
 .btn-relleno:hover {
   color: cyan;
   background-color: black;
   border-color: cyan; }
-
-.acerca {
-  margin: 20px; }
 
 #insta-v-1 {
   background-image: url("https://i.ibb.co/VHq774H/13-05-21.jpg"); }
@@ -276,10 +320,14 @@ header {
   width: 300px;
   padding: 50px 0; }
   .siguiente img {
-    object-fit: contain; }
+    object-fit: contain;
+    width: 100%; }
 
-.proxima {
+.proxima, .acerca {
   padding: 40px; }
+
+.fechas-p, .circuito-p {
+  margin-bottom: 15px; }
 
 .text-center, .text-left, .text-right {
   line-height: 5px; }
@@ -287,16 +335,32 @@ header {
 .text-center hr, .text-left hr, .text-right hr {
   height: 5px; }
 
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+  .text-right {
+    line-height: normal; } }
+
 .num {
   color: cyan; }
 
+.degraded {
+  background: black;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, black 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; }
+
 /* ----- BIOGRAFIA ----- */
+/* FONDO */
+#fondo-b::before {
+  background-image: url("https://i.ibb.co/gmXy7nk/Fondo-Biografia.jpg"); }
+
 /* IMAGEN */
 .img-b img {
   max-width: 420px;
   max-height: 663.27px;
-  margin-left: 20px;
-  margin-top: 8.69px; }
+  margin-left: 20px; }
 
 /* TEXTO */
 .text-b {
@@ -320,6 +384,10 @@ header {
     max-height: 505.35px; } }
 
 /* ----- CALENDARIO ----- */
+/* FONDO */
+#fondo-cal::before {
+  background-image: url("https://i.ibb.co/7SHY9st/Fondo-Calendario.jpg"); }
+
 /* CIRCUITOS */
 .resultados, .detalles {
   border: solid 3px;
@@ -401,6 +469,10 @@ header {
     height: 191.25px; } }
 
 /* ----- TRAYECTORIA ----- */
+/* FONDO */
+#fondo-t::before {
+  background-image: url("https://i.ibb.co/hVxLS8R/Fondo-Trayectoria.jpg"); }
+
 /* BOXES */
 .box-t {
   border: 4px solid darkcyan;
@@ -561,6 +633,10 @@ header {
     line-height: 1rem; } }
 
 /* ----- CARRERAS ----- */
+/* FONDO */
+#fondo-car::before {
+  background-image: url("https://i.ibb.co/mqWczvk/Fondo-Carreras.jpg"); }
+
 /* TABLA */
 .table-car {
   display: flex;
@@ -640,6 +716,10 @@ header {
       padding: 2.5px; } }
 
 /* ----- CONTACTO ----- */
+/* FONDO */
+#fondo-co::before {
+  background-image: url("https://i.ibb.co/xfBNPt3/Fondo-Contacto.jpg"); }
+
 /* PANEL */
 .panel-co {
   position: relative;
