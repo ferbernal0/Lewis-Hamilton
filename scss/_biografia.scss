@@ -3,27 +3,37 @@
 #fondo-b::before {
     background-image: url("https://i.ibb.co/gmXy7nk/Fondo-Biografia.jpg"); }
 /* IMAGEN */
-.img-b img {
-    max-width: 420px;
-    max-height: 663.27px;
-    margin-left: 20px; }
-/* TEXTO */
-.text-b {
-    position: relative;
-    text-align: center;
-    align-content: center;
-    margin: auto 40px;
-    h2 {
-        margin-top: 16px;
-        font-size: 2.5rem; }
-    p {
-        font-size: 1.1rem;
-        font-weight: bold; } }
-
+.bio {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif; 
+    font-size: 1rem; }
+.bio-1, .bio-2 {
+    margin: 15px; } 
+.bio-1 {
+    text-align: center; }
+.bio-2 li {
+    list-style: none;
+    &:before {
+        content: "🏆"; } }      
+.img-bio-1, .img-bio-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+.img-bio-1 img, .img-bio-2 img {
+    border-radius: 50%;
+    border: solid 5px darkcyan;
+    transition-property: transform, border;
+    transition-duration: 1.5s, 1.5s;
+    &:hover {
+        transform: rotate(1turn);
+        border: solid 5px cyan; } }
+.img-bio-1 img {
+    width: 75%; }
+.img-bio-2 img {
+    width: 400px; }
+    
 /* MEDIA QUERY */
-/* LARGE */
-@media (max-width: 1199px) {
+/* MEDIUM */
+@media (max-width: 991px) {
     /* imagen */
-    .img-b img {
-        max-width: 320px;
-        max-height: 505.35px; } }
+    .img-bio-1, .img-bio-2 {
+        display: none; } }
