@@ -19,9 +19,9 @@
     margin-bottom: 15px; }
 .galeria-img {
     overflow: hidden;
+    width: 350px;
+    height: 350px;
     & img {
-        width: 350px;
-        height: 350px;
         object-fit: cover;
         transition: all 0.5s ease-in-out;
         &:hover {
@@ -77,14 +77,15 @@
 /* EXTRA SMALL */
 @media (max-width: 575px) {
     .text-i {
-        font-size: 4rem;
-        line-height: 3.25rem; } }
+        font-size: 3.5rem;
+        line-height: 3rem; } }
 
 #fondo-i {
-    background-image: url("https://i.ibb.co/1mmRDnS/Fondo-LH-5.jpg");
+    background-image: url("https://i.ibb.co/b3Z2gpr/Fondo-LH.jpg");
     height: 606px;
     background-size: cover;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+    background-position-y: -50px;}
 
 @media (max-width: 991px) {
     #fondo-i {
@@ -146,18 +147,10 @@
 .proxima, .acerca {
     padding: 40px; }
 
-.fechas-p, .circuito-p {
-    margin-bottom: 15px; }
-
-.text-center, .text-left, .text-right {
+.text-center, .text-left {
     line-height: 5px; }
-.text-center hr, .text-left hr, .text-right hr {
+.text-center hr, .text-left hr {
     height: 5px; }
-
-/* EXTRA SMALL */
-@media (max-width: 575px) {
-    .text-right {
-        line-height: normal; } }
 
 .num {
     color: cyan; }
