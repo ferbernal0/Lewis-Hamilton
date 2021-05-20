@@ -1,5 +1,18 @@
 /* ----- INDEX ----- */
-/* TEXTO */
+/* FONDO Y TEXTO */
+#fondo-i {
+    background-image: url("https://i.ibb.co/b3Z2gpr/Fondo-LH.jpg");
+    height: 606px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px; }
+.degraded {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center; }
 .text-i {
     -webkit-text-stroke: 2px darkcyan;
     color: black;
@@ -13,9 +26,42 @@
         -webkit-text-stroke: 2px black;
         color: darkcyan;
         transform: scale(1.05) translate(15px); } }
+/* CONTENT */
+.acerca, .proxima {
+    padding: 10px;
+    border: solid 3px darkcyan;
+    border-radius: 5px;
+    margin: 10px 5px; }
+.proxima {
+    border-color: cyan;
+    & h3 {
+        font-weight: 600; } }
+.circuito-sig {
+    display: flex;
+    height: 240px;
+    max-height: 240px;
+    & img {
+        object-fit: contain;
+        width: 100%; } }
+.btn-relleno {
+    color: black;
+    background-color: darkcyan;
+    font-size: 1.25rem;
+    border: solid 2px black;
+    transition: all 0.4s;
+    margin-bottom: 8px;
+    &:hover {
+        color: cyan;
+        background-color: black;
+        border-color: cyan; } }
 /* GALERÍA */
+.galeria {
+    display: flex;
+    justify-content: center; }
 .galeria-item {
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    width: 350px;
+    height: 350px; }
 .galeria-img {
     overflow: hidden;
     width: 350px;
@@ -26,13 +72,12 @@
         &:hover {
             transform: scale(1.05); } } }
 .galeria-info {
-    opacity: 0;
     position: absolute;
-    left: 15px;
+    width: 350px;
+    opacity: 0;
     bottom: 0;
-    right: 15px;
     transition: all ease-in-out 0.3s;
-    background: black;
+    background-color: black;
     padding: 10px;
     & h4 {
         font-size: 18px;
@@ -40,80 +85,21 @@
         font-weight: 600;
         margin-bottom: 0;
         padding-right: 30px; }
-    & .no-link {
-        padding-right: 0; }
     & p {
         font-size: 14px;
         color: white;
-        margin-bottom: 0; }
-    & ul {
-        list-style: none;
-        padding: 0;
-        font-size: 15px; } }
+        margin-bottom: 0; } }
     .galeria-item:hover .galeria-info {
-        opacity: 0.75; }
+        opacity: 0.9; }
 .link-insta {
     position: absolute;
     right: 10px;
     font-size: 24px;
-    top: calc(50% - 18px);
+    top: calc(50% - 12px);
     color: white;
-    transition: all 0.3s;
+    transition: color 0.3s;
     &:hover {
         color: cyan; } }
-
-/* MEDIA QUERY */
-/* MEDIUM */
-@media (max-width: 991px) {
-    .text-i {
-        font-size: 6rem;
-        line-height: 5rem; } }
-/* SMALL */
-@media (max-width: 767px) {
-    .text-i {
-        font-size: 5rem;
-        line-height: 4rem; } }
-/* EXTRA SMALL */
-@media (max-width: 575px) {
-    .text-i {
-        font-size: 3.5rem;
-        line-height: 3rem; } }
-
-#fondo-i {
-    background-image: url("https://i.ibb.co/b3Z2gpr/Fondo-LH.jpg");
-    height: 606px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: -50px;}
-
-@media (max-width: 991px) {
-    #fondo-i {
-        background-position: right; } }
-.btn-relleno {
-    color: black;
-    background-color: darkcyan;
-    font-size: 1.25rem;
-    border: solid 2px black;
-    transition: all 0.4s;
-    margin-bottom: 8px; }
-    .btn-relleno:hover {
-        color: cyan;
-        background-color: black;
-        border-color: cyan; }
-
-#insta-v-1 {
-    background-image: url("https://i.ibb.co/VHq774H/13-05-21.jpg"); }
-#insta-v-2 {
-    background-image: url("https://i.ibb.co/q7TPLxk/09-05-21.jpg"); }
-#insta-v-3 {
-    background-image: url("https://i.ibb.co/w6z8zMN/08-05-21-1.jpg"); }
-#insta-v-4 {
-    background-image: url("https://i.ibb.co/WBZRY3x/08-05-21-2.jpg"); }
-#insta-v-5 {
-    background-image: url("https://i.ibb.co/djYKhMV/07-05-21.jpg"); }
-#insta-v-6 {
-    background-image: url("https://i.ibb.co/5sdfjNx/25-04-21.jpg"); }
-
 .galeria-vid {
     overflow: hidden;
     width: 350px;
@@ -134,32 +120,36 @@
     opacity: 0.8;
     &:hover {
         color: white;
-        opacity: 0.8;} }
+        opacity: 0.8; } }
+    /* links videos */
+    #insta-v-1 {
+        background-image: url("https://i.ibb.co/VHq774H/13-05-21.jpg"); }
+    #insta-v-2 {
+        background-image: url("https://i.ibb.co/q7TPLxk/09-05-21.jpg"); }
+    #insta-v-3 {
+        background-image: url("https://i.ibb.co/w6z8zMN/08-05-21-1.jpg"); }
+    #insta-v-4 {
+        background-image: url("https://i.ibb.co/WBZRY3x/08-05-21-2.jpg"); }
+    #insta-v-5 {
+        background-image: url("https://i.ibb.co/djYKhMV/07-05-21.jpg"); }
+    #insta-v-6 {
+        background-image: url("https://i.ibb.co/5sdfjNx/25-04-21.jpg"); }
 
-
-.siguiente {
-    display: flex;
-    align-items: center;
-    height: 240px;
-    max-height: 240px;
-    & img {
-        object-fit: contain;
-        width: 100%; } }
-.proxima, .acerca {
-    padding: 10px;
-    border: solid 3px darkcyan;
-    border-radius: 5px;
-    margin: 10px 5px; }
-
-.proxima {
-    border-color: cyan;}
-.proxima h3 {
-    font-weight: 600;}
-
-.degraded {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center; }
+/* MEDIA QUERY */
+/* MEDIUM */
+@media (max-width: 991px) {
+    #fondo-i {
+        background-position: right; }
+    .text-i {
+        font-size: 6rem;
+        line-height: 5rem; } }
+/* SMALL */
+@media (max-width: 767px) {
+    .text-i {
+        font-size: 5rem;
+        line-height: 4rem; } }
+/* EXTRA SMALL */
+@media (max-width: 575px) {
+    .text-i {
+        font-size: 3.5rem;
+        line-height: 3rem; } }
