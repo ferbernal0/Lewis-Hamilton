@@ -29,7 +29,7 @@ header {
     color: darkcyan;
     transition: color 0.4s;
     letter-spacing: 0.05rem;
-    line-height: 1.5rem; }
+    line-height: 1.75rem; }
     header a:hover {
       color: cyan;
       text-decoration: none; }
